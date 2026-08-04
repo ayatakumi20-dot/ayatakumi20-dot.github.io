@@ -1,101 +1,171 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AYA-Tech | アプリ開発・AI活用・業務効率化</title>
-  <meta name="description" content="AYA-Techは、アプリ開発、Web制作、AI活用、Excel/VBA自動化で、個人・小規模事業のアイデア実現をサポートします。" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AYA-Tech | 生活を便利にするアプリ開発</title>
+  <meta name="description" content="AYA-Techは、献立まとめ買い、ゴミ出しリマインダー、そろそろ、し忘れチェックなど、毎日の暮らしを少し便利にするAndroidアプリを開発しています。">
+  <meta name="theme-color" content="#071426">
+  <meta property="og:title" content="AYA-Tech | 生活を便利にするアプリ開発">
+  <meta property="og:description" content="アイデアを、使える形に。AYA-Techの公開アプリをご紹介します。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/aya-tech-logo.png">
+  <link rel="icon" href="assets/aya-tech-logo.png">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
-    <a href="#top" class="brand">
-      <img src="aya-tech-logo.png" alt="AYA-Tech logo" />
+    <a class="brand" href="#top" aria-label="AYA-Tech トップへ">
+      <img src="assets/aya-tech-logo.png" alt="AYA-Tech ロゴ">
       <span>AYA-Tech</span>
     </a>
-    <nav class="nav">
-      <a href="#services">サービス</a>
-      <a href="#works">できること</a>
-      <a href="#flow">流れ</a>
+    <nav aria-label="メインメニュー">
+      <a href="#apps">アプリ</a>
+      <a href="#about">AYA-Tech</a>
+      <a href="#media">掲載・紹介</a>
       <a href="#contact">お問い合わせ</a>
     </nav>
   </header>
 
   <main id="top">
     <section class="hero">
-      <div class="hero-text">
-        <p class="eyebrow">App / Web / AI Support</p>
+      <div class="hero__glow hero__glow--one"></div>
+      <div class="hero__glow hero__glow--two"></div>
+      <div class="hero__content">
+        <p class="eyebrow">APP DEVELOPMENT / AYA-TECH</p>
         <h1>アイデアを、<br>使える形に。</h1>
-        <p class="lead">AYA-Techは、アプリ開発・ホームページ制作・AI活用・業務効率化を通じて、あなたの「作りたい」を一緒に形にします。</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#contact">相談する</a>
-          <a class="button ghost" href="#services">サービスを見る</a>
+        <p class="hero__lead">毎日の「ちょっと不便」を、シンプルで使いやすいアプリに変えていきます。</p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="#apps">公開中アプリを見る</a>
+          <a class="button button--secondary" href="https://x.com/AYA_Tech_jp" target="_blank" rel="noopener noreferrer">Xで最新情報を見る</a>
         </div>
       </div>
-      <div class="hero-card">
-        <img src="aya-tech-logo.png" alt="AYA-Tech logo" />
-        <p>小さく始めて、しっかり育てる。</p>
+      <div class="hero__logo-card" aria-hidden="true">
+        <img src="assets/aya-tech-logo.png" alt="">
+        <p>生活を、少し便利に。</p>
       </div>
     </section>
 
-    <section id="services" class="section">
-      <p class="section-label">Services</p>
-      <h2>サービス</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>アプリ開発</h3>
-          <p>習慣アプリ、管理アプリ、業務用ツールなど、目的に合わせたアプリ制作をサポートします。</p>
-        </article>
-        <article class="card">
-          <h3>ホームページ制作</h3>
-          <p>個人・小規模事業向けに、見やすく信頼感のあるWebサイトを制作します。</p>
-        </article>
-        <article class="card">
-          <h3>AI活用支援</h3>
-          <p>文章作成、資料作成、業務改善など、AIを日常業務に取り入れる仕組みを提案します。</p>
-        </article>
-        <article class="card">
-          <h3>Excel / VBA自動化</h3>
-          <p>集計、分析、定型作業、予測ロジックなど、Excel業務の効率化を支援します。</p>
-        </article>
+    <section id="apps" class="section apps-section">
+      <div class="section-heading">
+        <p class="eyebrow">OUR APPS</p>
+        <h2>公開中アプリ</h2>
+        <p>アイコンと3つの特徴から、気になるアプリを見つけてください。</p>
+      </div>
+
+      <article class="app-row app-row--left">
+        <div class="app-visual">
+          <img src="assets/kondate-shopping.png" alt="献立まとめ買いのアプリアイコン">
+        </div>
+        <div class="app-copy">
+          <span class="status">Google Playで公開中</span>
+          <h3>献立まとめ買い</h3>
+          <p class="app-summary">毎日の献立決めと買い物を、まとめて効率化するアプリです。</p>
+          <ul>
+            <li>日数や人数に合わせて献立を考えられる</li>
+            <li>必要な食材を買い物リストにまとめられる</li>
+            <li>食材を使い回して無駄を減らせる</li>
+          </ul>
+          <a class="store-button" href="https://play.google.com/store/apps/details?id=com.kondate.shopping" target="_blank" rel="noopener noreferrer">Google Playで見る <span>↗</span></a>
+        </div>
+      </article>
+
+      <article class="app-row app-row--right">
+        <div class="app-visual">
+          <img src="assets/gomi-reminder.png" alt="ゴミ出しリマインダーのアプリアイコン">
+        </div>
+        <div class="app-copy">
+          <span class="status">Google Playで公開中</span>
+          <h3>ゴミ出しリマインダー</h3>
+          <p class="app-summary">「今日は何ゴミの日？」を通知で知らせる、シンプルなリマインダーです。</p>
+          <ul>
+            <li>ゴミの種類と収集曜日を自由に設定できる</li>
+            <li>忘れやすいゴミの日を通知でお知らせ</li>
+            <li>毎週・隔週など暮らしに合わせて管理できる</li>
+          </ul>
+          <a class="store-button" href="https://play.google.com/store/apps/details?id=com.ayata.gomireminder" target="_blank" rel="noopener noreferrer">Google Playで見る <span>↗</span></a>
+        </div>
+      </article>
+
+      <article class="app-row app-row--left">
+        <div class="app-visual">
+          <img src="assets/sorosoro.png" alt="そろそろのアプリアイコン">
+        </div>
+        <div class="app-copy">
+          <span class="status">Google Playで公開中</span>
+          <h3>そろそろ</h3>
+          <p class="app-summary">買い忘れや補充忘れを防ぐための、やさしいタイミング通知アプリです。</p>
+          <ul>
+            <li>必要になりそうな時期を登録して通知できる</li>
+            <li>日用品や食品の買い忘れを減らせる</li>
+            <li>シンプルな操作で継続しやすい</li>
+          </ul>
+          <a class="store-button" href="https://play.google.com/store/apps/details?id=com.sorosoro.app" target="_blank" rel="noopener noreferrer">Google Playで見る <span>↗</span></a>
+        </div>
+      </article>
+
+      <article class="app-row app-row--right">
+        <div class="app-visual">
+          <img src="assets/shiwasare-check.png" alt="し忘れチェックのアプリアイコン">
+        </div>
+        <div class="app-copy">
+          <span class="status">Google Playで公開中</span>
+          <h3>し忘れチェック</h3>
+          <p class="app-summary">外出や日常の大切な用事を、チェックと通知で忘れにくくします。</p>
+          <ul>
+            <li>忘れたくない用事をチェックリストで管理</li>
+            <li>必要なタイミングで通知を受け取れる</li>
+            <li>完了状況が一目でわかるシンプル設計</li>
+          </ul>
+          <a class="store-button" href="https://play.google.com/store/apps/details?id=jp.co.ayatech.check.todo" target="_blank" rel="noopener noreferrer">Google Playで見る <span>↗</span></a>
+        </div>
+      </article>
+    </section>
+
+    <section id="about" class="section about-section">
+      <div class="about-card">
+        <div>
+          <p class="eyebrow">ABOUT</p>
+          <h2>AYA-Techについて</h2>
+        </div>
+        <p>AYA-Techは、暮らしの中で感じる小さな不便を見つけ、Androidアプリとして形にしています。使う人が迷わず、毎日自然に使えることを大切にしています。</p>
       </div>
     </section>
 
-    <section id="works" class="section split">
-      <div>
-        <p class="section-label">What We Do</p>
-        <h2>こんなことができます</h2>
-        <p class="body-text">「まだ仕様が固まっていない」「何から始めればいいかわからない」という段階からでも大丈夫です。目的整理、画面設計、文章作成、実装まで一緒に進めます。</p>
+    <section id="media" class="section media-section">
+      <div class="section-heading section-heading--compact">
+        <p class="eyebrow">MEDIA & PARTNERS</p>
+        <h2>掲載・紹介</h2>
+        <p>AYA-Techやアプリをご紹介いただいたメディア・サイトを掲載していきます。</p>
       </div>
-      <ul class="check-list">
-        <li>習慣化アプリの企画・UI設計</li>
-        <li>会社・サービス紹介サイトの作成</li>
-        <li>Excelデータ分析・VBAツール作成</li>
-        <li>SNS投稿用の構成・文章作成</li>
-        <li>AIを使った業務フロー改善</li>
-      </ul>
-    </section>
-
-    <section id="flow" class="section">
-      <p class="section-label">Flow</p>
-      <h2>制作の流れ</h2>
-      <div class="flow">
-        <div><span>01</span><h3>相談</h3><p>作りたいものや目的を確認します。</p></div>
-        <div><span>02</span><h3>設計</h3><p>必要な機能、画面、文章を整理します。</p></div>
-        <div><span>03</span><h3>制作</h3><p>確認しながら形にしていきます。</p></div>
-        <div><span>04</span><h3>改善</h3><p>公開後の修正や追加にも対応します。</p></div>
+      <div class="media-card">
+        <div>
+          <span class="media-badge">相互紹介</span>
+          <h3>とくぶーのお得日記</h3>
+          <p>格安SIM・節約・ポイ活など、スマホ料金を見直したい方に役立つ情報を発信しているブログです。</p>
+        </div>
+        <a href="https://otokuboo.com/" target="_blank" rel="noopener noreferrer">サイトを見る ↗</a>
       </div>
     </section>
 
-    <section id="contact" class="contact">
-      <p class="section-label">Contact</p>
-      <h2>まずはお気軽にご相談ください</h2>
-      <p>ホームページ、アプリ、AI活用、Excel自動化など、作りたいものを教えてください。</p>
-      <a class="button primary" href="mailto:aya.takumi20@gmail.com">メールで相談する</a>
+    <section id="contact" class="section contact-section">
+      <div class="contact-card">
+        <p class="eyebrow">CONTACT</p>
+        <h2>お問い合わせ</h2>
+        <p>アプリに関するご意見、掲載・紹介のご相談など、お気軽にご連絡ください。</p>
+        <div class="contact-actions">
+          <a class="button button--primary" href="mailto:aya.takumi20@gmail.com">メールを送る</a>
+          <a class="button button--secondary" href="https://x.com/AYA_Tech_jp" target="_blank" rel="noopener noreferrer">@AYA_Tech_jp</a>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer>
+    <div class="footer-brand">
+      <img src="assets/aya-tech-logo.png" alt="AYA-Tech ロゴ">
+      <span>AYA-Tech</span>
+    </div>
     <p>© 2026 AYA-Tech. All Rights Reserved.</p>
   </footer>
 </body>

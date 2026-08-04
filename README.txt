@@ -1,10 +1,13 @@
-AYA-Tech ホームページ一式
+AYA-Tech 公式サイト 完成版
 
-内容:
+GitHub Pagesのリポジトリ直下に、以下をすべてアップロードしてください。
 - index.html
 - style.css
-- assets/aya-tech-logo.png
+- app-ads.txt
+- assets フォルダ
 
-使い方:
-index.html をブラウザで開くと確認できます。
-公開前に、index.html 内のメールアドレス example@example.com を実際の連絡先に変更してください。
+公開URL:
+https://ayatakumi20-dot.github.io/
+
+app-ads.txt:
+https://ayatakumi20-dot.github.io/app-ads.txt
