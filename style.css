@@ -101,3 +101,84 @@ footer { padding: 30px 20px 50px; text-align: center; color: #70839e; font-size:
   .app-row { padding: 22px 17px; border-radius: 24px; }
   .timeline div { grid-template-columns: 1fr; gap: 7px; }
 }
+
+```css
+/* ==============================
+   アプリ紹介：画像サイズ統一
+============================== */
+
+.app-row {
+  display: grid;
+  grid-template-columns: minmax(220px, 32%) 1fr;
+  align-items: center;
+  gap: 48px;
+  min-height: 380px;
+}
+
+/* 右側にアイコンを配置するカード */
+.app-row.image-right {
+  grid-template-columns: 1fr minmax(220px, 32%);
+}
+
+.app-row.image-right .app-visual {
+  order: 2;
+}
+
+.app-row.image-right .app-copy {
+  order: 1;
+}
+
+/* アイコンを置く領域 */
+.app-visual {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 全アプリアイコンを同じ大きさにする */
+.app-visual img {
+  display: block;
+  width: 280px;
+  height: 280px;
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 24%;
+  background: #ffffff;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+}
+
+/* 紹介文側 */
+.app-copy {
+  width: 100%;
+}
+
+/* スマートフォン表示 */
+@media (max-width: 760px) {
+  .app-row,
+  .app-row.image-right {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    min-height: auto;
+  }
+
+  .app-row.image-right .app-visual,
+  .app-row.image-right .app-copy {
+    order: initial;
+  }
+
+  .app-visual {
+    order: 1 !important;
+  }
+
+  .app-copy {
+    order: 2 !important;
+  }
+
+  .app-visual img {
+    width: min(260px, 78vw);
+    height: min(260px, 78vw);
+  }
+}
+```
