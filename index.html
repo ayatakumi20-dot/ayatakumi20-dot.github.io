@@ -3,222 +3,749 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="AYA-Tech公式サイト。生活を少し便利にするAndroidアプリの開発・公開実績を紹介しています。">
+  <meta name="description" content="AYA-Tech公式サイト。暮らしや仕事を少し便利にするAndroidアプリの開発・公開実績を紹介しています。">
   <meta name="theme-color" content="#071426">
   <title>AYA-Tech | アプリ開発・公開実績</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+  <!-- ================================
+       ヘッダー
+  ================================= -->
   <header class="site-header">
-    <a class="brand" href="#" data-tab-target="home" aria-label="AYA-Tech ホーム">
+
+    <a class="brand"
+       href="#"
+       data-tab-target="home"
+       aria-label="AYA-Tech ホーム">
+
       <img src="aya-tech-logo.png" alt="AYA-Tech ロゴ">
       <span>AYA-Tech</span>
+
     </a>
+
     <nav class="tabs" aria-label="メインメニュー">
+
       <button class="tab active" data-tab="home">HOME</button>
       <button class="tab" data-tab="apps">アプリ一覧</button>
       <button class="tab" data-tab="works">開発実績</button>
-      <button class="tab" data-tab="partners">掲載・協力サイト</button>
+      <button class="tab" data-tab="partners">協力サイト</button>
       <button class="tab" data-tab="about">AYA-Tech</button>
       <button class="tab" data-tab="contact">お問い合わせ</button>
+
     </nav>
+
   </header>
 
+
   <main>
-    <section class="panel active" id="home" aria-labelledby="home-title">
+
+    <!-- ================================
+         HOME
+    ================================= -->
+    <section class="panel active"
+             id="home"
+             aria-labelledby="home-title">
+
       <div class="hero">
+
         <div class="hero-copy">
-          <p class="eyebrow">ANDROID APP DEVELOPMENT</p>
-          <h1 id="home-title">アイデアを、<br>使える形に。</h1>
-          <p class="lead">AYA-Techは、毎日の小さな不便を解決する、シンプルで使いやすいアプリを開発しています。</p>
+
+          <p class="eyebrow">
+            ANDROID APP DEVELOPMENT
+          </p>
+
+          <h1 id="home-title">
+            アイデアを、<br>
+            使える形に。
+          </h1>
+
+          <p class="lead">
+            AYA-Techは、暮らしや仕事の小さな不便を解決する、
+            シンプルで使いやすいアプリを開発しています。
+          </p>
+
           <div class="actions">
-            <button class="button primary" data-tab-target="apps">公開中アプリを見る</button>
-            <a class="button secondary" href="https://x.com/AYA_Tech_jp" target="_blank" rel="noopener">Xを見る</a>
+
+            <button class="button primary"
+                    data-tab-target="apps">
+              公開中アプリを見る
+            </button>
+
+            <a class="button secondary"
+               href="https://x.com/AYA_Tech_jp"
+               target="_blank"
+               rel="noopener">
+              Xを見る
+            </a>
+
           </div>
+
         </div>
+
+
         <div class="hero-logo-card">
+
           <img src="aya-tech-logo.png" alt="AYA-Tech">
-          <p>小さく始めて、しっかり育てる。</p>
+
+          <p>
+            小さく始めて、しっかり育てる。
+          </p>
+
         </div>
+
       </div>
+
+
       <div class="summary-grid">
-        <article><strong>4</strong><span>公開中アプリ</span></article>
-        <article><strong>Android</strong><span>Google Playで配信</span></article>
-        <article><strong>Flutter</strong><span>アプリ開発</span></article>
+
+        <article>
+          <strong>5</strong>
+          <span>公開中アプリ</span>
+        </article>
+
+        <article>
+          <strong>Android</strong>
+          <span>Google Playで配信</span>
+        </article>
+
+        <article>
+          <strong>Flutter</strong>
+          <span>アプリ開発</span>
+        </article>
+
       </div>
+
     </section>
 
-    <section class="panel" id="apps" aria-labelledby="apps-title">
+
+    <!-- ================================
+         アプリ一覧
+    ================================= -->
+    <section class="panel"
+             id="apps"
+             aria-labelledby="apps-title">
+
       <div class="section-heading">
-        <p class="eyebrow">OUR APPS</p>
-        <h2 id="apps-title">公開中アプリ</h2>
-        <p>アイコン、特徴、Google Playへのリンクを分かりやすくまとめています。</p>
+
+        <p class="eyebrow">
+          OUR APPS
+        </p>
+
+        <h2 id="apps-title">
+          公開中アプリ
+        </h2>
+
+        <p>
+          AYA-TechがGoogle Playで公開しているアプリをご紹介します。
+        </p>
+
       </div>
 
+
+      <!-- ゴミ出しリマインダー -->
       <article class="app-row image-left">
-        <div class="app-visual"><img src="gomi-reminder.png" alt="ゴミ出しリマインダーのアイコン"></div>
+
+        <div class="app-visual">
+
+          <img src="gomi-reminder.png"
+               alt="ゴミ出しリマインダーのアイコン">
+
+        </div>
+
         <div class="app-copy">
-          <span class="status">公開中</span>
-          <h3>ゴミ出しリマインダー</h3>
+
+          <span class="status">
+            公開中
+          </span>
+
+          <h3>
+            ゴミ出しリマインダー
+          </h3>
+
           <ul>
             <li>ゴミの収集日を通知して出し忘れを防止</li>
             <li>生活に合わせて曜日や通知時刻を設定</li>
             <li>迷わず使えるシンプルな操作画面</li>
           </ul>
-          <a class="play-button" href="https://play.google.com/store/apps/details?id=com.ayata.gomireminder" target="_blank" rel="noopener">Google Playで見る</a>
+
+          <a class="play-button"
+             href="https://play.google.com/store/apps/details?id=com.ayata.gomireminder"
+             target="_blank"
+             rel="noopener">
+            Google Playで見る
+          </a>
+
         </div>
+
       </article>
 
+
+      <!-- 献立まとめ買い -->
       <article class="app-row image-right">
-        <div class="app-visual"><img src="kondate-shopping.png" alt="献立まとめ買いのアイコン"></div>
+
+        <div class="app-visual">
+
+          <img src="kondate-shopping.png"
+               alt="献立まとめ買いのアイコン">
+
+        </div>
+
         <div class="app-copy">
-          <span class="status">公開中</span>
-          <h3>献立まとめ買い</h3>
+
+          <span class="status">
+            公開中
+          </span>
+
+          <h3>
+            献立まとめ買い
+          </h3>
+
           <ul>
             <li>日数と人数から複数日分の献立を作成</li>
             <li>献立に必要な買い物リストをまとめて確認</li>
             <li>食材を使い回しやすく、買い物の負担を軽減</li>
           </ul>
-          <a class="play-button" href="https://play.google.com/store/apps/details?id=com.kondate.shopping" target="_blank" rel="noopener">Google Playで見る</a>
+
+          <a class="play-button"
+             href="https://play.google.com/store/apps/details?id=com.kondate.shopping"
+             target="_blank"
+             rel="noopener">
+            Google Playで見る
+          </a>
+
         </div>
+
       </article>
 
+
+      <!-- そろそろ -->
       <article class="app-row image-left">
-        <div class="app-visual"><img src="sorosoro.png" alt="そろそろのアイコン"></div>
+
+        <div class="app-visual">
+
+          <img src="sorosoro.png"
+               alt="そろそろのアイコン">
+
+        </div>
+
         <div class="app-copy">
-          <span class="status">公開中</span>
-          <h3>そろそろ</h3>
+
+          <span class="status">
+            公開中
+          </span>
+
+          <h3>
+            そろそろ
+          </h3>
+
           <ul>
             <li>食品や日用品の「そろそろ必要」を記録</li>
             <li>買い忘れを防ぐための確認リストとして活用</li>
             <li>必要なものだけを素早く登録できる簡単操作</li>
           </ul>
-          <a class="play-button" href="https://play.google.com/store/apps/details?id=com.sorosoro.app" target="_blank" rel="noopener">Google Playで見る</a>
+
+          <a class="play-button"
+             href="https://play.google.com/store/apps/details?id=com.sorosoro.app"
+             target="_blank"
+             rel="noopener">
+            Google Playで見る
+          </a>
+
         </div>
+
       </article>
 
+
+      <!-- し忘れチェック -->
       <article class="app-row image-right">
-        <div class="app-visual"><img src="shiwasure-check.png" alt="し忘れチェックのアイコン"></div>
+
+        <div class="app-visual">
+
+          <img src="shiwasure-check.png"
+               alt="し忘れチェックのアイコン">
+
+        </div>
+
         <div class="app-copy">
-          <span class="status">公開中</span>
-          <h3>し忘れチェック</h3>
+
+          <span class="status">
+            公開中
+          </span>
+
+          <h3>
+            し忘れチェック
+          </h3>
+
           <ul>
             <li>場所と用事を登録して、近づいたときに通知</li>
             <li>外出先での買い物や手続きを忘れにくくする</li>
             <li>地図を使って通知する場所を分かりやすく設定</li>
           </ul>
-          <a class="play-button" href="https://play.google.com/store/apps/details?id=jp.co.ayatech.check.todo" target="_blank" rel="noopener">Google Playで見る</a>
+
+          <a class="play-button"
+             href="https://play.google.com/store/apps/details?id=jp.co.ayatech.check.todo"
+             target="_blank"
+             rel="noopener">
+            Google Playで見る
+          </a>
+
         </div>
+
       </article>
+
+
+      <!-- 給与ビジョン -->
+      <article class="app-row image-left">
+
+        <div class="app-visual">
+
+          <img src="kyuyo-vision.png"
+               alt="給与ビジョンのアイコン">
+
+        </div>
+
+        <div class="app-copy">
+
+          <span class="status">
+            公開中
+          </span>
+
+          <h3>
+            給与ビジョン
+          </h3>
+
+          <ul>
+            <li>毎月の給与を記録して、収入の変化を確認</li>
+            <li>給与の推移をグラフで分かりやすく可視化</li>
+            <li>これまでの給与とこれからの収入を把握しやすくする</li>
+          </ul>
+
+          <a class="play-button"
+             href="https://play.google.com/store/apps/details?id=jp.kyuyovision.app"
+             target="_blank"
+             rel="noopener">
+            Google Playで見る
+          </a>
+
+        </div>
+
+      </article>
+
     </section>
 
-    <section class="panel" id="works" aria-labelledby="works-title">
+
+    <!-- ================================
+         開発実績
+    ================================= -->
+    <section class="panel"
+             id="works"
+             aria-labelledby="works-title">
+
       <div class="section-heading">
-        <p class="eyebrow">PORTFOLIO</p>
-        <h2 id="works-title">開発実績</h2>
-        <p>AYA-Techが公開・開発してきたアプリと対応分野です。</p>
+
+        <p class="eyebrow">
+          PORTFOLIO
+        </p>
+
+        <h2 id="works-title">
+          開発実績
+        </h2>
+
+        <p>
+          AYA-Techが公開・開発してきたアプリと対応分野です。
+        </p>
+
       </div>
+
+
       <div class="work-grid">
-        <article><span>01</span><h3>Androidアプリ公開</h3><p>Google Playで生活支援アプリを4本公開しています。</p></article>
-        <article><span>02</span><h3>Flutter開発</h3><p>スマートフォン向けアプリの企画・画面設計・実装を行っています。</p></article>
-        <article><span>03</span><h3>通知・位置情報</h3><p>日付通知や位置情報を使った、忘れ防止機能を実装しています。</p></article>
-        <article><span>04</span><h3>AI・業務効率化</h3><p>AI活用、Web制作、Excel・VBAによる業務改善にも取り組んでいます。</p></article>
+
+        <article>
+
+          <span>01</span>
+
+          <h3>
+            Androidアプリ公開
+          </h3>
+
+          <p>
+            Google PlayでAndroidアプリを5本公開しています。
+          </p>
+
+        </article>
+
+
+        <article>
+
+          <span>02</span>
+
+          <h3>
+            Flutter開発
+          </h3>
+
+          <p>
+            スマートフォン向けアプリの企画・画面設計・実装を行っています。
+          </p>
+
+        </article>
+
+
+        <article>
+
+          <span>03</span>
+
+          <h3>
+            通知・位置情報
+          </h3>
+
+          <p>
+            日付通知や位置情報など、スマートフォンの機能を活用したアプリを開発しています。
+          </p>
+
+        </article>
+
+
+        <article>
+
+          <span>04</span>
+
+          <h3>
+            AI・業務効率化
+          </h3>
+
+          <p>
+            AI活用、Web制作、Excel・VBAによる業務改善にも取り組んでいます。
+          </p>
+
+        </article>
+
       </div>
+
+
       <div class="timeline">
-        <div><b>公開中</b><p>献立まとめ買い／ゴミ出しリマインダー／そろそろ／し忘れチェック</p></div>
-        <div><b>開発中</b><p>給与ビジョン</p></div>
-        <div><b>企画中</b><p>時間と戦うゲーム型習慣アプリ</p></div>
+
+        <div>
+
+          <b>
+            公開中
+          </b>
+
+          <p>
+            献立まとめ買い／ゴミ出しリマインダー／そろそろ／し忘れチェック／給与ビジョン
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <b>
+            企画・開発
+          </b>
+
+          <p>
+            新しいアイデアをもとに、さまざまなジャンルのアプリ開発を続けています。
+          </p>
+
+        </div>
+
       </div>
+
     </section>
 
-    <section class="panel" id="partners" aria-labelledby="partners-title">
+
+    <!-- ================================
+         協力サイト
+    ================================= -->
+    <section class="panel"
+             id="partners"
+             aria-labelledby="partners-title">
+
       <div class="section-heading">
-        <p class="eyebrow">PARTNERS</p>
-        <h2 id="partners-title">・協力サイト</h2>
-        <p>AYA-Techや開発アプリをご紹介いただいたサイトを掲載します。</p>
+
+        <p class="eyebrow">
+          PARTNERS
+        </p>
+
+        <h2 id="partners-title">
+          協力サイト・掲載
+        </h2>
+
+        <p>
+          AYA-Techや開発アプリをご紹介いただいたサイトを掲載します。
+        </p>
+
       </div>
+
+
       <div class="partner-grid">
+
         <article class="partner-card">
-          <div class="partner-mark">と</div>
+
+          <div class="partner-mark">
+            と
+          </div>
+
           <div>
-            <span class="status muted">掲載・協力サイト</span>
-            <h3>とくぶーのお得日記</h3>
+
+            <span class="status muted">
+              協力サイト
+            </span>
+
+            <h3>
+              とくぶーのお得日記
+            </h3>
 
             <p>
-              格安SIM・節約のブログ
-              <a href="https://otokuboo.com/" target="_blank" rel="noopener">
-                「とくぶーのお得日記」
-              </a>
-              を運営するとくぶーさんに、AYA-Techをご紹介いただきました。
+              格安SIM・節約・ポイ活など、
+              暮らしに役立つ情報を発信するブログです。
+              AYA-Techについてもご紹介いただいています。
             </p>
 
-            <div class="partner-links">
-              <a href="https://otokuboo.com/" target="_blank" rel="noopener">
-                ブログを見る
-              </a>
+            <a href="https://otokuboo.com/"
+               target="_blank"
+               rel="noopener">
+              サイトを見る
+            </a>
 
-              <a href="https://otokuboo.com/partner/" target="_blank" rel="noopener">
-                紹介ページを見る
-              </a>
-            </div>
+            <br><br>
+
+            <a href="https://otokuboo.com/partner/"
+               target="_blank"
+               rel="noopener">
+              AYA-Tech紹介ページを見る
+            </a>
+
           </div>
+
         </article>
+
+
         <article class="partner-card placeholder">
-          <div class="partner-mark">＋</div>
-          <div><h3>今後追加予定</h3><p>ブログ、メディア、レビューサイトなどの掲載実績を追加していきます。</p></div>
+
+          <div class="partner-mark">
+            ＋
+          </div>
+
+          <div>
+
+            <h3>
+              今後追加予定
+            </h3>
+
+            <p>
+              ブログ、メディア、レビューサイトなどの
+              掲載実績を追加していきます。
+            </p>
+
+          </div>
+
         </article>
+
       </div>
+
     </section>
 
-    <section class="panel" id="about" aria-labelledby="about-title">
+
+    <!-- ================================
+         AYA-Techについて
+    ================================= -->
+    <section class="panel"
+             id="about"
+             aria-labelledby="about-title">
+
       <div class="about-layout">
-        <div class="about-logo"><img src="aya-tech-logo.png" alt="AYA-Tech ロゴ"></div>
-        <div>
-          <p class="eyebrow">ABOUT US</p>
-          <h2 id="about-title">AYA-Techについて</h2>
-          <p class="large-copy">「アイデアを、使える形に。」を掲げ、日常生活の小さな不便を解決するアプリを開発しています。</p>
-          <div class="tags"><span>Flutter</span><span>Android</span><span>AI活用</span><span>Web制作</span><span>Excel / VBA</span></div>
+
+        <div class="about-logo">
+
+          <img src="aya-tech-logo.png"
+               alt="AYA-Tech ロゴ">
+
         </div>
+
+
+        <div>
+
+          <p class="eyebrow">
+            ABOUT US
+          </p>
+
+          <h2 id="about-title">
+            AYA-Techについて
+          </h2>
+
+          <p class="large-copy">
+            「アイデアを、使える形に。」を掲げ、
+            暮らしや仕事の小さな不便を解決する
+            シンプルで使いやすいアプリを開発しています。
+          </p>
+
+          <div class="tags">
+
+            <span>Flutter</span>
+            <span>Android</span>
+            <span>AI活用</span>
+            <span>Web制作</span>
+            <span>Excel / VBA</span>
+
+          </div>
+
+        </div>
+
       </div>
+
     </section>
 
-    <section class="panel" id="contact" aria-labelledby="contact-title">
+
+    <!-- ================================
+         お問い合わせ
+    ================================= -->
+    <section class="panel"
+             id="contact"
+             aria-labelledby="contact-title">
+
       <div class="contact-card">
-        <p class="eyebrow">CONTACT</p>
-        <h2 id="contact-title">お問い合わせ</h2>
-        <p>アプリへのご意見、掲載・紹介、開発についてのご相談はこちらからお願いいたします。</p>
+
+        <p class="eyebrow">
+          CONTACT
+        </p>
+
+        <h2 id="contact-title">
+          お問い合わせ
+        </h2>
+
+        <p>
+          アプリへのご意見、掲載・紹介、
+          開発についてのご相談はこちらからお願いいたします。
+        </p>
+
         <div class="actions centered">
-          <a class="button primary" href="mailto:aya.takumi20@gmail.com">メールで連絡する</a>
-          <a class="button secondary" href="https://x.com/AYA_Tech_jp" target="_blank" rel="noopener">X @AYA_Tech_jp</a>
+
+          <a class="button primary"
+             href="mailto:aya.takumi20@gmail.com">
+            メールで連絡する
+          </a>
+
+          <a class="button secondary"
+             href="https://x.com/AYA_Tech_jp"
+             target="_blank"
+             rel="noopener">
+            X @AYA_Tech_jp
+          </a>
+
         </div>
+
       </div>
+
     </section>
+
   </main>
 
+
+  <!-- ================================
+       フッター
+  ================================= -->
   <footer>
-    <p>© 2026 AYA-Tech. All Rights Reserved.</p>
+
+    <p>
+      © 2026 AYA-Tech. All Rights Reserved.
+    </p>
+
   </footer>
 
+
+  <!-- ================================
+       タブ切り替え
+  ================================= -->
   <script>
-    const tabs = document.querySelectorAll('[data-tab]');
-    const panels = document.querySelectorAll('.panel');
-    const targets = document.querySelectorAll('[data-tab-target]');
+
+    const tabs =
+      document.querySelectorAll('[data-tab]');
+
+    const panels =
+      document.querySelectorAll('.panel');
+
+    const targets =
+      document.querySelectorAll('[data-tab-target]');
+
 
     function showPanel(id) {
-      panels.forEach(panel => panel.classList.toggle('active', panel.id === id));
-      tabs.forEach(tab => tab.classList.toggle('active', tab.dataset.tab === id));
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-      history.replaceState(null, '', '#' + id);
+
+      panels.forEach(panel =>
+        panel.classList.toggle(
+          'active',
+          panel.id === id
+        )
+      );
+
+
+      tabs.forEach(tab =>
+        tab.classList.toggle(
+          'active',
+          tab.dataset.tab === id
+        )
+      );
+
+
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+
+
+      history.replaceState(
+        null,
+        '',
+        '#' + id
+      );
+
     }
 
-    tabs.forEach(tab => tab.addEventListener('click', () => showPanel(tab.dataset.tab)));
-    targets.forEach(target => target.addEventListener('click', event => {
-      event.preventDefault();
-      showPanel(target.dataset.tabTarget);
-    }));
 
-    const initial = location.hash.replace('#', '');
-    if (document.getElementById(initial)) showPanel(initial);
+    tabs.forEach(tab =>
+
+      tab.addEventListener(
+        'click',
+        () => showPanel(tab.dataset.tab)
+      )
+
+    );
+
+
+    targets.forEach(target =>
+
+      target.addEventListener(
+        'click',
+        event => {
+
+          event.preventDefault();
+
+          showPanel(
+            target.dataset.tabTarget
+          );
+
+        }
+      )
+
+    );
+
+
+    const initial =
+      location.hash.replace('#', '');
+
+
+    if (
+      document.getElementById(initial)
+    ) {
+
+      showPanel(initial);
+
+    }
+
   </script>
+
 </body>
 </html>
